@@ -34,10 +34,9 @@ However, more specifically we will achieve this through to:
 
 With regards to specific content we cover:
 
-* using ML for both classification and regression,
-* artificial neural networks (ANNs) and convolutional neural networks (CNNs)
-* treatment of both tabular and image data
-
+* optionally, consider adding specific takeaway skills here
+* for example, classification and regression with neural networks
+* for example, how to add and commit files to git
 
 ## Teaching Material
 
@@ -50,7 +49,7 @@ These take the form of \<partially completed jupyter notebooks/downloadable code
 
 ### Worked Solutions
 Worked solutions for all of the exercises can be found in the [worked solutions](worked-solutions/) directory.  
-These are for recapping after the course in case you missed anything, and contain ideal solutions.
+These are for recapping after the course in case you missed anything, and contain example solutions.
 
 
 ## Preparation and prerequisites
@@ -102,6 +101,9 @@ Here you should include any instructions required for setup in preparation for t
 These may be followed during the sesison as a walkthrough, but you should provide clear
 instructions here for participants who take longer, needs additional help, or return to work
 in their own time.
+It is possible that many participants will not have done this in advance,
+which you should be prepared for, but having these clear instructions means
+that they can be pointed at this instead of holding up the session.
 
 Things to include are:
 
