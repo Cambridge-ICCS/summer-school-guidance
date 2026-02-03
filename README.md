@@ -5,6 +5,10 @@ teaching materials for the ICCS Summer School. Instructors have freedom in conte
 style, and delivery, and how to meet these recommendations. The guidance is intended to
 ensure materials are well prepared, reusable, and consistent for participants across courses.
 
+This guidance also applies when revisiting or updating previous sessions. Existing
+materials should be reviewed and updated to meet these guidelines, ensuring consistency
+and quality for all participants.
+
 
 
 ## Materials
