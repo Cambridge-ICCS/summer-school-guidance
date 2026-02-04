@@ -1,4 +1,4 @@
-<img src="./images/ICCS_logo.png"  width="355">
+<img src="./images/UCAM_ICCS_Logo.png"  width="600">
 
 # \<Your Course Title\>
 
