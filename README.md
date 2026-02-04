@@ -25,11 +25,15 @@ will most often be in the form of a GitHub repository.
       [Creative Commons licence](https://creativecommons.org/share-your-work/cclicenses/)
       can be used for teaching materials.
     - Clearly state the chosen licence(s) in your README and include a `LICENSE` file.
-- Slides should be made available as a PDF, or as a webpage using Quarto, Pluto.jl, HackMD,
-  or similar tools. All slides and materials should be accessible online.
+- All slides and materials should be accessible online.
+    - Slides can be prepared in any medium as suit the presenter: LaTeX Beamer, Google slides,
+      Quarto/revealjs, Ploto.jl etc.
+    - A copy of the slides should be made available in the repository as a PDF, or as
+      source code with instructions to generate.
 - All code, exercises, and workshop materials should be included in the repository with
   any additional dependencies documented in the README.
-    - Good software engineering standards should be followed throughout (see the RSE Skills
+    - Good software engineering standards should be followed throughout (see the
+      [RSE Skills Course](https://github.com/jatkinson1000/rse-skills-workshop)
       course for guidance). Code should be documented, reproducible, and follow best
       practices.
 - The ICCS logo and branding should be used on slides and in the repository where appropriate.
@@ -47,7 +51,8 @@ will most often be in the form of a GitHub repository.
   self-study and revision.
 - Use the provided [`README_template.md`](./README_template.md) as a starting point for your
   course repository. Adapt as needed, but ensure all sections are completed and relevant.
-- For detailed guidance on pedagogy and lesson preparation, refer to the Software Carpentries'
+- There are many external resources that provide detailed guidance on pedagogy and lesson
+  preparation. For example the Software Carpentries'
   [Lesson Development Training](https://carpentries.github.io/lesson-development-training/).
 
 
@@ -59,13 +64,19 @@ will most often be in the form of a GitHub repository.
   time.
     - Start preparation early and incorporate it into your regular work schedule, managing the
       same as you would a software or research project.
+        - We suggest spending up to half a day per week on preparation to minise impact
+          on other projects.
+        - If preparing materials as a group schedule a regular meeting to ensure things
+          are on track.
     - Prioritise your learning objectives to keep key content within the lesson time.
         - There may be technical difficulties and participants will have
-          questions. It is better to have too little material with more time for
-          discussion than too much.
+          questions which consume unanticipated time.
+        - It is better to have too little material with more time for
+          discussion than too much. Consider having "bonus material" that can be skipped
+          if short on time without compromising the learning objectives.
         - Remember that new learners will take longer to complete your exercises than you do.
-- For delivery and teaching guidance, see the Software Carpentries
-  [Instructor Training](https://carpentries.github.io/instructor-training/).
+- There is much guidance available on delivery and teaching. As an example tailored towards
+  computational workshops see the [Software Carpentries Instructor Training](https://carpentries.github.io/instructor-training/).
     - Consider how participants will learn, aiming to go beyond just Passive learning
       (reading and listening) to incorporate Active (writing code, running examples),
       Constructive (experimenting, solving problems), and Interactive (discussion)
@@ -81,9 +92,9 @@ will most often be in the form of a GitHub repository.
       the wifi connection. If you have a large repository or require large datasets/downloads
       then reduce these in size as much as possible, ask participants to obtain them in
       advance, and/or have backup materials (e.g. storage device) available on the day.
-- It is advised to seek external review of your materials against this
-  guidance from others preparing courses, in addition to a practice session.
-- For new courses, a practice delivery session should be conducted at least one month in
+- It is advised to seek review of your materials against this guidance from others
+  preparing courses.
+- For new and updated courses, a practice delivery session should be conducted at least one month in
   advance. Use this to gather feedback and make necessary improvements. Sessions often take
   longer than anticipated; plan accordingly.
 
@@ -99,8 +110,8 @@ will most often be in the form of a GitHub repository.
 
 ## Further Guidance and Support
 
-For any questions or support, please reach out to the RSE team, Jack Atkinson, or
-Dominic Orchard.
+For any questions or support, please reach out to the RSE team, the Principal RSE team,
+in particular Jack Atkinson, or Dominic Orchard.
 
 
 ---
@@ -111,8 +122,7 @@ Dominic Orchard.
 - Create a new repository, ideally under the [ICCS GitHub organisation](https://github.com/Cambridge-ICCS).
 - Initialise the repository with a `README.md` (see the provided
   [`README_template.md`](./README_template.md) for structure and recommended sections).
-- Add a suitable `LICENSE` file. For code, the MIT Licence is recommended. For teaching
-  materials, consider a Creative Commons licence. Guidance on adding a licence is available
+- Add a suitable `LICENSE` file as detailed above. Guidance on adding a licence is available
   in the [GitHub documentation](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
   Clearly state the chosen licence(s) in your README.
-- Add your workshop materials using version control.
+- Start adding your workshop materials using version control.
