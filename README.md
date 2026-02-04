@@ -45,6 +45,12 @@ All materials for your course should be provided online in a GitHub repository.
 
 - For delivery and teaching guidance, see the Software Carpentries
   [Instructor Training](https://carpentries.github.io/instructor-training/).
+    - Consider how participants will learn, aiming to go beyond just Passive learning
+      (reading and listening) to incorporate Active (writing code, running examples),
+      Constructive (experimenting, solving problems), and Interactive (discussion)
+      elements. For more see the [ICAP framework](https://doi.org/10.1080/00461520.2014.965823) 
+      which suggests deeper learning is attained when moving up the hierarchy from
+      Passive to Interactive.
 - Code, installation instructions, and workshop materials should be tested on multiple
   systems, including at least one system other than your own, before the summer school.
 - For new courses, a practice delivery session should be conducted at least one month in
