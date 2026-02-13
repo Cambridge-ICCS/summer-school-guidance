@@ -9,6 +9,10 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     
+    # Explicitly limit permissions for security
+    permissions:
+      issues: read
+      
     # Only run if the issue has both required labels
     if: |
       contains(github.event.issue.labels.*.name, 'Summer School 2026') &&
