@@ -1,0 +1,84 @@
+name: Course Progress Tracker
+description: Track progress towards completing a summer school course
+title: "[COURSE]: "
+labels: ["Summer School 2026", "Course Progress"]
+body:
+  - type: input
+    id: course-name
+    attributes:
+      label: Course Name
+      description: Name of the summer school course
+      placeholder: e.g., Practical ML with PyTorch
+    validations:
+      required: true
+
+  - type: input
+    id: course-materials
+    attributes:
+      label: Course Materials Repository/Link
+      description: Link to course materials or repository
+      placeholder: e.g., https://github.com/Cambridge-ICCS/course-repo
+
+  - type: textarea
+    id: leaders
+    attributes:
+      label: Leader(s)
+      description: List the course leader(s)
+      placeholder: |
+        - Name 1 (@github-username)
+        - Name 2 (@github-username)
+    validations:
+      required: true
+
+  - type: textarea
+    id: contributors
+    attributes:
+      label: Contributors
+      description: List the contributors to the course (optional)
+      placeholder: |
+        - Name 1 (@github-username)
+        - Name 2 (@github-username)
+
+  - type: textarea
+    id: helpers
+    attributes:
+      label: Helpers
+      description: List the helpers for the course (optional)
+      placeholder: |
+        - Name 1 (@github-username)
+        - Name 2 (@github-username)
+
+  - type: checkboxes
+    id: progress-checklist
+    attributes:
+      label: Progress Checklist
+      description: Track completion of key milestones
+      options:
+        - label: Repository/materials created
+        - label: Content checked against guidance
+        - label: Practice session run
+        - label: Feedback incorporated
+    validations:
+      required: true
+
+  - type: textarea
+    id: practice-session-feedback
+    attributes:
+      label: Practice Session Feedback
+      description: Summarize feedback from practice sessions
+      placeholder: |
+        Document key feedback points from practice sessions here...
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other relevant information
+      placeholder: |
+        Add any other notes, links, or information here...
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Note:** Planning and discussion can be conducted in the issue comments below. Use this space to collaborate with team members and track ongoing progress.
