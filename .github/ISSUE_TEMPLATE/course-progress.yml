@@ -1,7 +1,7 @@
 name: Course Progress Tracker
 description: Track progress towards completing a summer school course
 title: "[COURSE]: "
-labels: ["course-progress"]
+labels: ["Summer School 2026", "Course Progress"]
 body:
   - type: input
     id: course-name
