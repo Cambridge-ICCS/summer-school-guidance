@@ -1,0 +1,60 @@
+name: Add Course Progress Issues to Project Board
+
+# Triggers when an issue is opened or labeled
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    
+    # Only run if the issue has both required labels
+    if: |
+      contains(github.event.issue.labels.*.name, 'Summer School 2026') &&
+      contains(github.event.issue.labels.*.name, 'Course Progress')
+    
+    steps:
+      - name: Check issue labels
+        run: |
+          echo "Issue #${{ github.event.issue.number }} created/labeled"
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Labels: ${{ join(github.event.issue.labels.*.name, ', ') }}"
+          
+      - name: Add issue to project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          # CONFIGURATION REQUIRED:
+          # 1. Update the project-url below to match your project board:
+          #    - For organization projects: https://github.com/orgs/Cambridge-ICCS/projects/{PROJECT_NUMBER}
+          #    - For repository projects: https://github.com/Cambridge-ICCS/summer-school-guidance/projects/{PROJECT_NUMBER}
+          #    You can find the project number in the project URL when you view it in GitHub.
+          #
+          # 2. Create a Personal Access Token (classic) with the following scopes:
+          #    - repo (Full control of private repositories)
+          #    - project (Full control of projects - for Projects v2)
+          #    - org:read (Read org and team membership, read org projects - if using org-level projects)
+          #
+          # 3. Add the PAT as a repository secret named 'ADD_TO_PROJECT_PAT':
+          #    Repository Settings → Secrets and variables → Actions → New repository secret
+          #    Name: ADD_TO_PROJECT_PAT
+          #    Value: Your generated PAT
+          #
+          # Note: The actions/add-to-project action automatically adds items to the first
+          # status column (typically "TODO" or similar) in your project board.
+          project-url: https://github.com/orgs/Cambridge-ICCS/projects/1
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          
+      - name: Log success
+        if: success()
+        run: |
+          echo "✅ Successfully added issue #${{ github.event.issue.number }} to project board"
+          
+      - name: Log failure
+        if: failure()
+        run: |
+          echo "❌ Failed to add issue #${{ github.event.issue.number }} to project board"
+          echo "Please check:"
+          echo "  1. The project URL is correct"
+          echo "  2. The ADD_TO_PROJECT_PAT secret is configured with appropriate permissions"
+          echo "  3. The PAT has not expired"
