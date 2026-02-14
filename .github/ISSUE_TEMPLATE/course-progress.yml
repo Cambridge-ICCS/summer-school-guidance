@@ -62,11 +62,16 @@ body:
       required: true
 
   - type: textarea
-    id: practice-session-feedback
+    id: practice-session
     attributes:
-      label: Practice Session Feedback
-      description: Summarize feedback from practice sessions
+      label: Practice Session
+      description: Record practice session details
       placeholder: |
+        - **Date:** dd/mm/yyyy
+        - **Participants:** @github-username
+        
+        #### Practice Session Feedback
+        
         Document key feedback points from practice sessions here...
 
   - type: textarea
