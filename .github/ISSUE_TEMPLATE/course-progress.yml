@@ -65,7 +65,7 @@ body:
     id: practice-session
     attributes:
       label: Practice Session
-      description: Record practice session details and feedback
+      description: Record practice session details
       placeholder: |
         - **Date:** dd/mm/yyyy
         - **Participants:** @github-username
